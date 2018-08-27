@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1">
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
   <asmv1:assemblyIdentity name="RainbowRedundancyRemover.exe" version="1.0.0.17" publicKeyToken="368341f108eb51ee" language="neutral" processorArchitecture="msil" type="win32" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="" version="" />
+    <assemblyIdentity name="RainbowRedundancyRemover" version="1.0.0.0" publicKeyToken="368341F108EB51EE" language="neutral" processorArchitecture="msil" />
     <commandLine file="RainbowRedundancyRemover.exe" parameters="" />
   </entryPoint>
   <trustInfo>
     <security>
       <applicationRequestMinimum>
-        <PermissionSet class="System.Security.PermissionSet" version="1" Unrestricted="true" ID="Custom" SameSite="site" />
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
         <defaultAssemblyRequest permissionSetReference="Custom" />
       </applicationRequestMinimum>
       <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
@@ -37,24 +37,9 @@
     </dependentOS>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Newtonsoft.Json.dll" />
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="RainbowRedundancyRemover.exe" size="472016">
-      <hash>
-        <dsig:Transforms>
-          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-        </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>E00FWkNRf1DzV97j/9eBuMBaYmk=</dsig:DigestValue>
-      </hash>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
     </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Selenium.Helper.dll" />
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.VisualStudio.Telemetry.dll" />
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EnvDTE.dll" size="261768">
@@ -69,69 +54,16 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.VisualStudio.Utilities.Internal.dll" />
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WebDriver.dll" />
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WebDriver.Support.dll" />
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
-      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
-    </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="System.Design.dll" />
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="System.Threading.Tasks.Dataflow.dll" />
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="System.ValueTuple.dll" />
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.VisualStudio.TextManager.Interop.8.0.dll" size="57344">
-      <assemblyIdentity name="Microsoft.VisualStudio.TextManager.Interop.8.0" version="8.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Diagnostics.Tracing.EventSource.dll" size="157968">
+      <assemblyIdentity name="Microsoft.Diagnostics.Tracing.EventSource" version="1.1.16.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>5RBRBaTrsd77/cbv6BYh+GKEMIM=</dsig:DigestValue>
+        <dsig:DigestValue>Ee+ClhuR+FaJ9qXalNDVwy8ymDU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.VisualStudio.GraphModel.dll" />
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.VisualStudio.OLE.Interop.dll" size="118784">
-      <assemblyIdentity name="Microsoft.VisualStudio.OLE.Interop" version="7.1.40304.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" />
-      <hash>
-        <dsig:Transforms>
-          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-        </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>YPn0VvpAaKX5ez3BsZLWWZ/zz00=</dsig:DigestValue>
-      </hash>
-    </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="stdole.dll" size="32392">
-      <assemblyIdentity name="stdole" version="7.0.3300.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" />
-      <hash>
-        <dsig:Transforms>
-          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-        </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>ktNm3hC1M2WpE4GIHeFQW655yXk=</dsig:DigestValue>
-      </hash>
-    </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Diagnostics.Tracing.EventSource.dll" />
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.MSXML.dll" size="69632">
@@ -142,6 +74,42 @@
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
         <dsig:DigestValue>+mYRO5Bbn1MNNNGaLH9KkmW6tcQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.VisualStudio.ComponentModelHost.dll" size="18232">
+      <assemblyIdentity name="Microsoft.VisualStudio.ComponentModelHost" version="15.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>GCEBp1eAnjVWXn/p2Zk9vFQsVas=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.VisualStudio.GraphModel.dll" size="439544">
+      <assemblyIdentity name="Microsoft.VisualStudio.GraphModel" version="15.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>KeipeEzqA8sgcurC0+zTyGt3dF8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.VisualStudio.OLE.Interop.dll" size="118784">
+      <assemblyIdentity name="Microsoft.VisualStudio.OLE.Interop" version="7.1.40304.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>YPn0VvpAaKX5ez3BsZLWWZ/zz00=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -158,10 +126,52 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.VisualStudio.ComponentModelHost.dll" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.VisualStudio.RemoteControl.dll" size="55568">
+      <assemblyIdentity name="Microsoft.VisualStudio.RemoteControl" version="14.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>UHNz8UWijrkWboFHHiEWhokt+Bs=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.VisualStudio.RemoteControl.dll" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.VisualStudio.Shell.15.0.dll" size="2307592">
+      <assemblyIdentity name="Microsoft.VisualStudio.Shell.15.0" version="15.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>3FzADQ9GjYg8nvaMpYNk4oiVH/8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.VisualStudio.Shell.Framework.dll" size="98312">
+      <assemblyIdentity name="Microsoft.VisualStudio.Shell.Framework" version="15.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>mqILd/qyzQJz/YzDKBge2EXdf3o=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.VisualStudio.Shell.Interop.dll" size="266008">
+      <assemblyIdentity name="Microsoft.VisualStudio.Shell.Interop" version="7.1.40304.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>9q+/eDDkuwTD0a9n4acIks5BzgY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.VisualStudio.Shell.Interop.8.0.dll" size="172032">
@@ -188,6 +198,18 @@
     </dependentAssembly>
   </dependency>
   <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.VisualStudio.Telemetry.dll" size="792208">
+      <assemblyIdentity name="Microsoft.VisualStudio.Telemetry" version="15.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>njGTJigl5UtcOk2BO0NOPMkrIpY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.VisualStudio.TextManager.Interop.dll" size="114688">
       <assemblyIdentity name="Microsoft.VisualStudio.TextManager.Interop" version="7.1.40304.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" />
       <hash>
@@ -200,29 +222,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="RainbowRedundancyRemover.application" size="5941">
-      <assemblyIdentity name="RainbowRedundancyRemover.application" version="1.0.0.17" publicKeyToken="368341f108eb51ee" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.VisualStudio.TextManager.Interop.8.0.dll" size="57344">
+      <assemblyIdentity name="Microsoft.VisualStudio.TextManager.Interop.8.0" version="8.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>7ek8CIvYRuF8QWF20Ufs1hYRhT0=</dsig:DigestValue>
+        <dsig:DigestValue>5RBRBaTrsd77/cbv6BYh+GKEMIM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.VisualStudio.Shell.15.0.dll" />
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.VisualStudio.Shell.Interop.dll" size="266008">
-      <assemblyIdentity name="Microsoft.VisualStudio.Shell.Interop" version="7.1.40304.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.VisualStudio.Utilities.Internal.dll" size="39704">
+      <assemblyIdentity name="Microsoft.VisualStudio.Utilities.Internal" version="14.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>9q+/eDDkuwTD0a9n4acIks5BzgY=</dsig:DigestValue>
+        <dsig:DigestValue>GITr/YRmA2+qGAleWDorGX9O8FY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -239,7 +258,136 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.VisualStudio.Shell.Framework.dll" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Newtonsoft.Json.dll" size="662528">
+      <assemblyIdentity name="Newtonsoft.Json" version="11.0.0.0" publicKeyToken="30AD4FE6B2A6AEED" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>OoM+t8a+ID8WeZ17fM2LjJ1DkmE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="RainbowRedundancyRemover.exe" size="472016">
+      <assemblyIdentity name="RainbowRedundancyRemover" version="1.0.0.0" publicKeyToken="368341F108EB51EE" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>E00FWkNRf1DzV97j/9eBuMBaYmk=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="RainbowRedundancyRemover.application" size="5959">
+      <assemblyIdentity name="RainbowRedundancyRemover.application" version="1.0.0.17" publicKeyToken="368341f108eb51ee" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>8HlLf5atIjbKNLDe43q2C4eeoT0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency xmlns="urn:schemas-microsoft-com:asm.v1">
+    <dependentAssembly asmv2:dependencyType="install" asmv2:codebase="RainbowRedundancyRemover.exe.manifest" asmv2:size="24914">
+      <assemblyIdentity name="RainbowRedundancyRemover.exe" version="1.0.0.17" publicKeyToken="368341f108eb51ee" language="neutral" processorArchitecture="msil" type="win32" />
+      <hash xmlns="urn:schemas-microsoft-com:asm.v2">
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>Z+eRT5BJ+kxAD4h9AeCM5g4HqPY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Selenium.Helper.dll" size="13824">
+      <assemblyIdentity name="Selenium.Helper" version="1.0.0.1" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>rqkxEHr31YKBvyJBqoI/3qRHX2E=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="stdole.dll" size="32392">
+      <assemblyIdentity name="stdole" version="7.0.3300.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>ktNm3hC1M2WpE4GIHeFQW655yXk=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="System.Design.dll" size="5233672">
+      <assemblyIdentity name="System.Design" version="15.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>ZiXBV/5zEp8lhjOBsjHzxsMn9oA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="System.Threading.Tasks.Dataflow.dll" size="182504">
+      <assemblyIdentity name="System.Threading.Tasks.Dataflow" version="4.5.24.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>NQO2jffiH0iDwhQcDPW9sYYDzis=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="System.ValueTuple.dll" size="78992">
+      <assemblyIdentity name="System.ValueTuple" version="4.0.3.0" publicKeyToken="CC7B13FFCD2DDD51" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>gc0ay1PUk8VMjVbzedeQqQGjVaw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WebDriver.dll" size="1787392">
+      <assemblyIdentity name="WebDriver" version="3.12.1.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>KO3rM4Dhgm3Jwrk9m9pkPHAJ/K0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WebDriver.Support.dll" size="52736">
+      <assemblyIdentity name="WebDriver.Support" version="3.12.1.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>Hx8bGqDggXygPclL9pnLKohP79A=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
   </dependency>
   <file name="Google-Noto-Emoji-Travel-Places-42682-rainbow.ico" size="175006">
     <hash>
@@ -248,87 +396,6 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
       <dsig:DigestValue>V9+fEn/lluvwkxWHHwntphMD/Ko=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Microsoft.Diagnostics.Tracing.EventSource.dll" size="157968">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>Ee+ClhuR+FaJ9qXalNDVwy8ymDU=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Microsoft.VisualStudio.ComponentModelHost.dll" size="18232">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>GCEBp1eAnjVWXn/p2Zk9vFQsVas=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Microsoft.VisualStudio.GraphModel.dll" size="439544">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>KeipeEzqA8sgcurC0+zTyGt3dF8=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Microsoft.VisualStudio.RemoteControl.dll" size="55568">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>UHNz8UWijrkWboFHHiEWhokt+Bs=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Microsoft.VisualStudio.Shell.15.0.dll" size="2307592">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>3FzADQ9GjYg8nvaMpYNk4oiVH/8=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Microsoft.VisualStudio.Shell.Framework.dll" size="98312">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>mqILd/qyzQJz/YzDKBge2EXdf3o=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Microsoft.VisualStudio.Telemetry.dll" size="792208">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>njGTJigl5UtcOk2BO0NOPMkrIpY=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Microsoft.VisualStudio.Utilities.Internal.dll" size="39704">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>GITr/YRmA2+qGAleWDorGX9O8FY=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Newtonsoft.Json.dll" size="662528">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>OoM+t8a+ID8WeZ17fM2LjJ1DkmE=</dsig:DigestValue>
     </hash>
   </file>
   <file name="phantomjs.exe" size="18587648">
@@ -349,15 +416,6 @@
       <dsig:DigestValue>7uHsdjIprLi6AgFg8/rEzqB6Obk=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="RainbowRedundancyRemover.exe" size="472016">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>E00FWkNRf1DzV97j/9eBuMBaYmk=</dsig:DigestValue>
-    </hash>
-  </file>
   <file name="RainbowRedundancyRemover.exe.config" size="3806">
     <hash>
       <dsig:Transforms>
@@ -367,59 +425,4 @@
       <dsig:DigestValue>N8513GndUzd8eLgrnXN2VXTjotU=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Selenium.Helper.dll" size="13824">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>rqkxEHr31YKBvyJBqoI/3qRHX2E=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="System.Design.dll" size="5233672">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>ZiXBV/5zEp8lhjOBsjHzxsMn9oA=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="System.Threading.Tasks.Dataflow.dll" size="182504">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>NQO2jffiH0iDwhQcDPW9sYYDzis=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="System.ValueTuple.dll" size="78992">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>gc0ay1PUk8VMjVbzedeQqQGjVaw=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="WebDriver.dll" size="1787392">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>KO3rM4Dhgm3Jwrk9m9pkPHAJ/K0=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="WebDriver.Support.dll" size="52736">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>Hx8bGqDggXygPclL9pnLKohP79A=</dsig:DigestValue>
-    </hash>
-  </file>
-  <publisherIdentity name="CN=MECHACAT\Andy" issuerKeyHash="e6de71494ebc07a072b8b44595fbc021268928b5" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2" />
-<Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>2WrrnrkKSAdhtitYLsMvuwf/GgU=</DigestValue></Reference></SignedInfo><SignatureValue>LxwDIQvSkIWvnagF8MqmO5cmXTABPDU9vvl0bS5zgdeTGJya/fgeYQpTTl4HY84JQ+Z9S5CaJg1q10b5H2iQeKPKbhtf6WkE5xKdOLxq2rKLFizGzb5tyNkBQOpdWUYN9H0EQDY1LD1Gp86YoOiUCKIvUhfgmI336cKehN1/G2g=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>mC4ohgvhoLse4Zhlgt4d+Dv2BQEe3uxZnmYtWkEGeott1t1V59sfIWV8ynSWTG1ZMpWcekxQlgGmqgxG9HyzQLuecpf7cdsGybw5DRzgEZIYlEJp4QHMLyfzEhE1x81lCKTCvzQqbpPXQK81JzZbhv4CEW/ocjGoQgPVNbexOI8=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="051aff07bb2fc32e582bb66107480ab99eeb6ad9" Description="" Url=""><as:assemblyIdentity name="RainbowRedundancyRemover.exe" version="1.0.0.17" publicKeyToken="368341f108eb51ee" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=MECHACAT\Andy</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>TBmlKrWJW9EjBtYaGbjQCPGThDo=</DigestValue></Reference></SignedInfo><SignatureValue>NnODx2EGgpW7KudJCioGEv4z0ofL865arOJz4x+xajGo/U9dNCcjrYLSBkchUF4tqTjaW/y0FnFwtSv2wadyyekdIu+yvge778wVA2Z+gWtbOdGL53xCZd15emZPAtDFjoxaW5BkBGiGb04Z0Oj1CfKdZX/MODSpcFs+Hrr7vXg=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>mC4ohgvhoLse4Zhlgt4d+Dv2BQEe3uxZnmYtWkEGeott1t1V59sfIWV8ynSWTG1ZMpWcekxQlgGmqgxG9HyzQLuecpf7cdsGybw5DRzgEZIYlEJp4QHMLyfzEhE1x81lCKTCvzQqbpPXQK81JzZbhv4CEW/ocjGoQgPVNbexOI8=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIBzTCCATagAwIBAgIQJ34pEEGGc4xPVRmWgG/UEzANBgkqhkiG9w0BAQsFADAlMSMwIQYDVQQDHhoATQBFAEMASABBAEMAQQBUAFwAQQBuAGQAeTAeFw0xODA2MjAxODQyMzRaFw0xOTA2MjEwMDQyMzRaMCUxIzAhBgNVBAMeGgBNAEUAQwBIAEEAQwBBAFQAXABBAG4AZAB5MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCYLiiGC+Ggux7hmGWC3h34O/YFAR7e7FmeZi1aQQZ6i23W3VXn2x8hZXzKdJZMbVkylZx6TFCWAaaqDEb0fLNAu55yl/tx2wbJvDkNHOARkhiUQmnhAcwvJ/MSETXHzWUIpMK/NCpuk9dArzUnNluG/gIRb+hyMahCA9U1t7E4jwIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAC5q7QbGfHI3Amt/1fwFomKSYwZM+m7lPa+U4e8UP3yd/Z6/vJWD0uStem5U6j+g5kyGYgR/DkjuxBbW6wR5TZmtC2klxfnjUDnOmPDQ2sT56bpX/3o1kxSonAxvGnKOkb3B/SJQ3KwfO20ZSvvu1WKCnBRpMbyKdV5OkxlcBw6T</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
+<publisherIdentity name="CN=MECHACAT\Andy" issuerKeyHash="e6de71494ebc07a072b8b44595fbc021268928b5" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>+1HHUxF31kqJ3mmXNKdRYRuZMaFBSzckBEtF+/5WgV0=</DigestValue></Reference></SignedInfo><SignatureValue>TekhvXl/SPWW5fWl6sQIkq4grZIa5XJe30LiteHfQWbq64rqNP/mVr1q4gAucAezrP3+og1rbD5nBQGFDnCdaFdgSah1CRaDQMpc3rmneANtc6LjoUDpJaHgyAUjuCc1PXzzYhInSZwptY5Xz2HRlVDVnS1D8U1TCT0ppjTh7Po=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>mC4ohgvhoLse4Zhlgt4d+Dv2BQEe3uxZnmYtWkEGeott1t1V59sfIWV8ynSWTG1ZMpWcekxQlgGmqgxG9HyzQLuecpf7cdsGybw5DRzgEZIYlEJp4QHMLyfzEhE1x81lCKTCvzQqbpPXQK81JzZbhv4CEW/ocjGoQgPVNbexOI8=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="5d8156fefb454b0424374b41a131991b6151a7349769de894ad6771153c751fb" Description="" Url=""><as:assemblyIdentity name="RainbowRedundancyRemover.exe" version="1.0.0.17" publicKeyToken="368341f108eb51ee" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=MECHACAT\Andy</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>plFWTADhJJsluxZ6Pnr+jfZIpziL+smEska8Xparvjc=</DigestValue></Reference></SignedInfo><SignatureValue>I0MJLUi02EBRWiVWkCclEVDzgH435YPqdBLZUdsdz1N0lSvlW/qifSCgaerhQhPh9rlxRikrkN6vWXiuRU2sJq2KO+v1lf60s2J1pRAPFruIPHpm+G0k95m4xr2mtspELjVcELx9blr8GPYZ+K2aIr5O5+gCkby6VI9k7+Y78iU=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>mC4ohgvhoLse4Zhlgt4d+Dv2BQEe3uxZnmYtWkEGeott1t1V59sfIWV8ynSWTG1ZMpWcekxQlgGmqgxG9HyzQLuecpf7cdsGybw5DRzgEZIYlEJp4QHMLyfzEhE1x81lCKTCvzQqbpPXQK81JzZbhv4CEW/ocjGoQgPVNbexOI8=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIBzTCCATagAwIBAgIQJ34pEEGGc4xPVRmWgG/UEzANBgkqhkiG9w0BAQsFADAlMSMwIQYDVQQDHhoATQBFAEMASABBAEMAQQBUAFwAQQBuAGQAeTAeFw0xODA2MjAxODQyMzRaFw0xOTA2MjEwMDQyMzRaMCUxIzAhBgNVBAMeGgBNAEUAQwBIAEEAQwBBAFQAXABBAG4AZAB5MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCYLiiGC+Ggux7hmGWC3h34O/YFAR7e7FmeZi1aQQZ6i23W3VXn2x8hZXzKdJZMbVkylZx6TFCWAaaqDEb0fLNAu55yl/tx2wbJvDkNHOARkhiUQmnhAcwvJ/MSETXHzWUIpMK/NCpuk9dArzUnNluG/gIRb+hyMahCA9U1t7E4jwIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAC5q7QbGfHI3Amt/1fwFomKSYwZM+m7lPa+U4e8UP3yd/Z6/vJWD0uStem5U6j+g5kyGYgR/DkjuxBbW6wR5TZmtC2klxfnjUDnOmPDQ2sT56bpX/3o1kxSonAxvGnKOkb3B/SJQ3KwfO20ZSvvu1WKCnBRpMbyKdV5OkxlcBw6T</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
