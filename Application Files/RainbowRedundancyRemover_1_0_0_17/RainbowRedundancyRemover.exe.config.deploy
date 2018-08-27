@@ -42,32 +42,29 @@
       <setting name="DatabasePath" serializeAs="String">
         <value>'C:\\Users\\Andy\\source\\repos\\RainbowRedundancyRemover\\Database\\Lead Queue.accdb'</value>
       </setting>
-      <setting name="LynxUser" serializeAs="String">
-        <value>billing@greatstonecontracting.com</value>
-      </setting>
       <setting name="LynxPass" serializeAs="String">
-        <value></value>
+        <value />
       </setting>
       <setting name="FusionID" serializeAs="String">
-        <value></value>
+        <value />
       </setting>
       <setting name="FusionUser" serializeAs="String">
         <value>llangton</value>
       </setting>
       <setting name="FusionPass" serializeAs="String">
-        <value></value>
+        <value />
       </setting>
       <setting name="TextPhone" serializeAs="String">
-        <value></value>
+        <value />
       </setting>
       <setting name="apiKey" serializeAs="String">
-        <value></value>
+        <value />
       </setting>
       <setting name="userIden" serializeAs="String">
-        <value></value>
+        <value />
       </setting>
       <setting name="phoneIden" serializeAs="String">
-        <value></value>
+        <value />
       </setting>
       <setting name="CheckFolder" serializeAs="String">
         <value />
@@ -83,6 +80,9 @@
       </setting>
       <setting name="ExcelPath" serializeAs="String">
         <value />
+      </setting>
+      <setting name="LynxUser" serializeAs="String">
+        <value>billing@greatstonecontracting.com</value>
       </setting>
     </RainbowRedundancyRemover.Properties.Settings>
   </userSettings>
