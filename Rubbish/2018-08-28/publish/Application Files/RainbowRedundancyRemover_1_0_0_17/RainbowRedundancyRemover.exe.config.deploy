@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <configSections>
+    <sectionGroup name="userSettings" type="System.Configuration.UserSettingsGroup, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <section name="RainbowRedundancyRemover.Properties.Settings" type="System.Configuration.ClientSettingsSection, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" allowExeDefinition="MachineToLocalUser" requirePermission="false" />
+    </sectionGroup>
+  </configSections>
+  <connectionStrings />
+  <startup>
+    <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.6.1" />
+  </startup>
+  <runtime>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="TechTalk.SpecFlow" publicKeyToken="0778194805d6db41" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-2.3.2.0" newVersion="2.3.2.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="Newtonsoft.Json" publicKeyToken="30ad4fe6b2a6aeed" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-11.0.0.0" newVersion="11.0.0.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="System.ValueTuple" publicKeyToken="cc7b13ffcd2ddd51" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-4.0.3.0" newVersion="4.0.3.0" />
+      </dependentAssembly>
+    </assemblyBinding>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="System.Design" publicKeyToken="b03f5f7f11d50a3a" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-15.0.0.0" newVersion="15.0.0.0" />
+      </dependentAssembly>
+    </assemblyBinding>
+  </runtime>
+  <userSettings>
+    <RainbowRedundancyRemover.Properties.Settings>
+      <setting name="AccuLynxPath" serializeAs="String">
+        <value>https://my.acculynx.com/dashboard</value>
+      </setting>
+      <setting name="FusionPath" serializeAs="String">
+        <value>https://fusion-ngs.net/Enterprise/Module/User/Login.aspx</value>
+      </setting>
+      <setting name="DatabasePath" serializeAs="String">
+        <value>'C:\\Users\\Andy\\source\\repos\\RainbowRedundancyRemover\\Database\\Lead Queue.accdb'</value>
+      </setting>
+      <setting name="LynxPass" serializeAs="String">
+        <value />
+      </setting>
+      <setting name="FusionID" serializeAs="String">
+        <value />
+      </setting>
+      <setting name="FusionUser" serializeAs="String">
+        <value>llangton</value>
+      </setting>
+      <setting name="FusionPass" serializeAs="String">
+        <value />
+      </setting>
+      <setting name="TextPhone" serializeAs="String">
+        <value />
+      </setting>
+      <setting name="apiKey" serializeAs="String">
+        <value />
+      </setting>
+      <setting name="userIden" serializeAs="String">
+        <value />
+      </setting>
+      <setting name="phoneIden" serializeAs="String">
+        <value />
+      </setting>
+      <setting name="CheckFolder" serializeAs="String">
+        <value />
+      </setting>
+      <setting name="CheckImage" serializeAs="String">
+        <value />
+      </setting>
+      <setting name="CheckBack" serializeAs="String">
+        <value />
+      </setting>
+      <setting name="OneNote" serializeAs="String">
+        <value />
+      </setting>
+      <setting name="ExcelPath" serializeAs="String">
+        <value />
+      </setting>
+      <setting name="LynxUser" serializeAs="String">
+        <value>billing@greatstonecontracting.com</value>
+      </setting>
+    </RainbowRedundancyRemover.Properties.Settings>
+  </userSettings>
+</configuration>
